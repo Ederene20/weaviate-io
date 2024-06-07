@@ -1,7 +1,12 @@
 .partnersHead {
   background: #130c49;
-  background-image: url('/img/site/home-page-bg-pattern.svg') !important;
+  background-image: url('/img/site/bg-weaviate-hd-dark.jpg') !important;
   background-size: cover;
+  background-position: center;
+
+  @media screen and (max-width: 520px) {
+    background-image: url('/img/site/bg-weaviate-mobile-dark.jpg') !important;
+  }
 
   p {
     color: white;
@@ -136,7 +141,7 @@
 
   .buttonGradient:hover {
     border-radius: 0.3125rem;
-    outline: 1px solid #2fc513;
+    outline: 1px solid #ffffff;
     background: rgb(15, 0, 50);
     color: #fff;
     font-weight: 400;
