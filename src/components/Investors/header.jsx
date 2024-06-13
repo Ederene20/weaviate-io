@@ -48,7 +48,7 @@ export default function Header() {
             className={styles.buttonGradient}
             to="mailto:investors@weaviate.io"
           >
-            Contact Us at investors@weaviate.io
+            Contact Us
           </Link>
         </div>
       </div>

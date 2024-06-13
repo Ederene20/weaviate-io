@@ -232,54 +232,59 @@
   justify-content: flex-start;
 
   @media screen and (max-width: 800px) {
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 500px) {
     justify-content: left;
   }
 
   a {
-    height: 45px;
-    width: 360px;
+    width: 11.1875rem;
+    height: 3.125rem;
+
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 0.25rem;
     cursor: pointer;
     text-decoration: none;
-
-    @media screen and (max-width: 400px) {
-      height: 64px;
-      width: 350px;
-      text-align: center;
-    }
   }
 
   .buttonGradient {
-    background-image: linear-gradient(45deg, #20e220 60%, #ffff00);
-    color: rgba(46, 49, 143);
-    font-weight: bold;
-    transition: all 1s ease-out;
+    border-radius: 0.375rem;
+    background: #130c49;
+    color: #fff;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 163.8%; /* 1.638rem */
+    width: 24rem;
   }
 
   .buttonGradient:hover {
-    border-radius: 0.3125rem;
-    outline: 1px solid rgb(15, 0, 50);
-    background: rgb(15, 0, 50);
+    border-radius: 0.375rem;
+    background: #130c49;
     color: #fff;
-    font-weight: 400;
   }
 
   .buttonOutline {
-    outline: 1px solid #20e220;
-    font-weight: bold;
-    color: #fff;
-    transition: all 1s ease-out;
+    color: #130c49;
+    border-radius: 0.375rem;
+    background: #fff;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 163.8%; /* 1.638rem */
   }
 
   .buttonOutline:hover {
-    border-radius: 0.3125rem;
-    outline: 1px solid #130c49;
-    background: rgb(97 189 115);
-    color: #130c49;
-    font-weight: 400;
+    border-radius: 0.375rem;
+    background: #fff;
   }
 }
 
@@ -292,22 +297,5 @@
     @media screen and (max-width: 950px) {
       display: none;
     }
-  }
-
-  .buttonGradient {
-    border-radius: 0.3125rem;
-    outline: 1px solid #130c49;
-    background: #61bd73;
-    color: #130c49;
-    font-weight: 400;
-  }
-
-  .buttonOutline {
-    font-weight: 400;
-    border-radius: 0.3125rem;
-    outline: rgb(19, 12, 73) solid 1px;
-    color: white;
-    border-radius: 0.3125rem;
-    border: 1px solid #2fc514;
   }
 }

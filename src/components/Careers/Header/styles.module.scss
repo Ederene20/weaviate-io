@@ -35,26 +35,33 @@ p {
 
 .textGradient {
   background: -webkit-linear-gradient(45deg, #20e220 60%, #ffff00);
-  -webkit-background-clip: text;
+
   -webkit-text-fill-color: transparent;
 
   font-size: 3rem;
 }
 
 .buttons {
-  margin-top: 70px;
+  margin-top: 30px;
+  gap: 20px;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 30px;
+  justify-content: center;
 
-  @media screen and (max-width: 860px) {
-    flex-direction: column;
+  @media screen and (max-width: 800px) {
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 500px) {
+    justify-content: left;
   }
 
   a {
-    height: 45px;
-    width: 280px;
+    width: 11.1875rem;
+    height: 3.125rem;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,37 +69,41 @@ p {
     cursor: pointer;
     text-decoration: none;
   }
-}
 
-.buttonGradient {
-  border-radius: 0.3125rem;
-  outline: 1px solid #130c49;
-  background: #61bd73;
-  color: #130c49;
-  font-weight: 400;
-  transition: all 1s ease-out;
-}
+  .buttonGradient {
+    border-radius: 0.375rem;
+    background: #130c49;
+    color: #fff;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 163.8%; /* 1.638rem */
+    width: 13.1875rem;
+  }
 
-.buttonOutline {
-  font-weight: 400;
-  border-radius: 0.3125rem;
-  outline: 1px solid #130c49;
-  color: #130c49;
-  transition: all 1s ease-out;
-}
+  .buttonGradient:hover {
+    border-radius: 0.375rem;
+    background: #130c49;
+    color: #fff;
+  }
 
-.buttonGradient:hover {
-  border-radius: 0.3125rem;
-  outline: 1px solid #130c49;
-  background: rgb(15, 0, 50);
-  color: #fff;
-  font-weight: 400;
-}
+  .buttonOutline {
+    color: #130c49;
+    border-radius: 0.375rem;
+    background: #fff;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 163.8%; /* 1.638rem */
+    width: 14rem;
+  }
 
-.buttonOutline:hover {
-  border-radius: 0.3125rem;
-  outline: 1px solid #130c49;
-  background: rgb(15, 0, 50);
-  color: #fff;
-  font-weight: 400;
+  .buttonOutline:hover {
+    border-radius: 0.375rem;
+    background: #fff;
+  }
 }

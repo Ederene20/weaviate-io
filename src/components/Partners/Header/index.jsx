@@ -10,9 +10,9 @@ export default function PartnersHeader() {
       <div className={styles.partnersHead}>
         <div className="container">
           <div className={styles.grid}>
-            <p className={styles.title}>
+            <h1 className={styles.title}>
               Weaviate <span>Partners</span>
-            </p>
+            </h1>
             <p className={styles.text}>
               Grow with Weaviate! We bring together cutting-edge AI technologies
               and service providers to deliver transformational solutions for

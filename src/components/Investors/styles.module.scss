@@ -7,9 +7,18 @@
   align-items: center;
   justify-content: center;
 
+  @media screen and (max-width: 800px) {
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 500px) {
+    justify-content: left;
+  }
+
   a {
-    height: 45px;
-    width: 320px;
+    width: 11.1875rem;
+    height: 3.125rem;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,31 +28,40 @@
   }
 
   .buttonGradient {
-    border-radius: 0.3125rem;
-    outline: 1px solid #130c49;
-    background: #61bd73;
-    transition: all 1s ease-out;
-    color: #130c49;
+    border-radius: 0.375rem;
+    background: #130c49;
+    color: #fff;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 163.8%; /* 1.638rem */
+    width: 13.1875rem;
   }
 
   .buttonGradient:hover {
-    border-radius: 0.3125rem;
-    outline: 1px solid #130c49;
-    background: rgb(15, 0, 50);
+    border-radius: 0.375rem;
+    background: #130c49;
     color: #fff;
   }
 
   .buttonOutline {
-    border: 1px solid #130c49;
     color: #130c49;
-    transition: all 1s ease-out;
+    border-radius: 0.375rem;
+    background: #fff;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 163.8%; /* 1.638rem */
+    width: 14rem;
   }
 
   .buttonOutline:hover {
-    border-radius: 0.3125rem;
-    outline: 1px solid #130c49;
-    background: rgb(97 189 115);
-    color: #130c49;
+    border-radius: 0.375rem;
+    background: #fff;
   }
 }
 
